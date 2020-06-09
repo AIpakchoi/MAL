@@ -34,4 +34,4 @@ mAP = 47.0 on test-dev
 ## pre-trained model
 ResNet50: https://share.weiyun.com/5kcZju5
 ResNet101: https://share.weiyun.com/5gtr6Ho
-ResNext101: 
+ResNext101: https://share.weiyun.com/oUZUWfSx
