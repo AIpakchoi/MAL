@@ -1,12 +1,20 @@
 # MAL
-MAL for cvpr765
+MAL code for the paper Multiple Anchor Learning for Visual Object Detection [pdf](https://arxiv.org/abs/1912.02252).
 
 
 ## install
 Get into MAL root folder.
-1. Install conda env by `conda env create -f environment.yaml` and activate it by 'conda activate MAL'.
-2. Copy https://github.com/facebookresearch/maskrcnn-benchmark/tree/master/maskrcnn_benchmark to this repository.
-3. Build maskrcnn_benchmark by run `python setup.py build develop`
+1. Create conda env by `conda env create -n MAL` and activate it by 'conda activate MAL'.
+2. Install python libraries.
+`conda install ipython ninja yacs cython matplotlib tqdm`
+3. Install pytorch 1.1 + torchvision 0.2.1 by pip.
+download `whl` file at https://download.pytorch.org/whl/cu90/torch_stable.html
+`pip install [downloaded file]`
+4. Install pycocotools
+`pip install pycocotools`
+5. Copy https://github.com/facebookresearch/maskrcnn-benchmark/tree/master/maskrcnn_benchmark to this repository.
+6. Build maskrcnn_benchmark by run `python setup.py build develop`
+7. Install OpenCV3.
 
 ## inference for an image
 1. Go to `./demo`
@@ -23,5 +31,7 @@ For val set, run
 ## experimental result
 mAP = 47.0 on test-dev
 
-## to do
-clean the training code
+## pre-trained model
+ResNet50: https://share.weiyun.com/5kcZju5
+ResNet101: https://share.weiyun.com/5gtr6Ho
+ResNext101: 
